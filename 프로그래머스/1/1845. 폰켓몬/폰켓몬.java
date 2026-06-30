@@ -9,6 +9,6 @@ class Solution {
             map.put(n, map.getOrDefault(n, 0) + 1);
         }
         
-        return map.size() >= nums.length / 2 ? nums.length / 2 : map.size();
+        return Math.min(nums.length / 2, map.size());
     }
 }
